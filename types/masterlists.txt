@@ -1,0 +1,5 @@
+type Masterlists {
+    name: String!
+    id: Int!
+    alias: String!
+  }
