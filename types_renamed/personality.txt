@@ -1,0 +1,17 @@
+type Personality @plural(value: "Personality")
+{
+description: String
+date_of_birth: String
+date_of_death: String
+id: String
+image: String
+official_website: String
+age: String
+alias: String
+name: String
+nationality: String
+place_of_birth: String
+zodiac_sign: String
+time_of_birth: String
+is_publisher: String
+}
