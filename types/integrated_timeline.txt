@@ -1,0 +1,15 @@
+type IntegratedTimeline {
+id: String
+time_period: String
+title_of_time_period: String
+sortable_date: String
+specific_date: String
+events: String
+references: String
+text_1: String
+caption_1: String
+text_2: String
+caption_2: String
+text_3: String
+caption_3: String
+}

@@ -1,0 +1,29 @@
+type Bibliography {
+Bibliography: String
+id: String
+title: String
+alias: String
+web_serial_number: String
+reference_code: String
+web_display: String
+date_of_library_publication: String
+place_of_publication: String
+histographical_note: String
+main_historical_note: String
+binding_status: String
+accession_number: String
+cdt: String
+country_of_publication: String
+date_of_published_edition_in_library: String
+dates_of_first_edition: String
+isbn_issn_number: String
+language_of_publication: String
+number_of_pages_in_publication_text: String
+personality_film_visually_featured_on_cover: String
+publisher: String
+serial_number: String
+sortable_year_date_of_publication: String
+sub_title_of_document_book: String
+title_of_document_book: String
+volume_issue_number: String
+}

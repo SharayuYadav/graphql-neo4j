@@ -1,0 +1,14 @@
+type Auction {
+auction_code: String
+AuctionHouse: String
+date_of_auction: String
+home_currency: String
+id: String
+year_of_auction: String
+euro_rate: String
+gbp_rate: String
+hkd_to_usd: String
+inr_to_usd_rate: String
+alias: String
+title: String
+}

@@ -1,5 +1,6 @@
 type Masterlists {
-    name: String!
-    id: Int!
-    alias: String!
+    name: String
+    id: String
+    alias: String
+    image: String
   }

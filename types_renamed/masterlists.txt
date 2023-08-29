@@ -1,5 +1,0 @@
-type Masterlists {
-    name: String
-    id: String
-    alias: String
-  }

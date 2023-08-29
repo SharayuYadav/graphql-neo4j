@@ -1,0 +1,6 @@
+type Language {
+id: String
+name: String
+alias: String
+country: String
+}

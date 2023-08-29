@@ -1,0 +1,7 @@
+type TeachingInfrastructure {
+id: String
+post: String
+data: String
+display_date: String
+image: String
+}

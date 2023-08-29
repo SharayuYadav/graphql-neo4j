@@ -25,7 +25,7 @@ function readFiles(dirname, onFileContent, onError) {
   });
 }
 
-readFiles('types_renamed/', function(filename, content) {
+readFiles('types/', function(filename, content) {
   dataStr += content + '\n';
 }, function(err) {
   throw err;

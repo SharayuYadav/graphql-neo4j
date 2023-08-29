@@ -1,0 +1,7 @@
+type Currency {
+id: String
+name: String
+alias: String
+country: String
+symbol: String
+}

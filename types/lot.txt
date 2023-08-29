@@ -1,0 +1,8 @@
+type Lot {
+id: String
+published: String
+lot_number: String
+sp_gbp: String
+sp_inr: String
+sp_usd: String
+}

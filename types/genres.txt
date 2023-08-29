@@ -1,0 +1,5 @@
+type Genres {
+id: String
+name: String
+alias: String
+}

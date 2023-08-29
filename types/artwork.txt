@@ -1,0 +1,10 @@
+type ArtWork {
+id: String
+image: String
+height_cm: String
+width_cm: String
+alias: String
+date_of_artwork: String
+medium: String
+title: String
+}

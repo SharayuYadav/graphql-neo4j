@@ -1,0 +1,8 @@
+type Screening {
+id: String
+event_name: String
+type: String
+sortable_date: String
+opening_date: String
+closing_date: String
+}

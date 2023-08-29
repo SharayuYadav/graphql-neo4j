@@ -1,0 +1,5 @@
+type SoundTrack {
+id: String
+name: String
+duration_of_song: String
+}
