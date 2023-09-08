@@ -1,0 +1,10 @@
+type Projects @cacheControl(maxAge: 30) {
+    published: String
+    venue: String
+    name: String
+    id: String
+    link: String
+    display_date: String
+    alias: String
+    image: String
+}

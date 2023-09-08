@@ -1,0 +1,6 @@
+type ResearchCategories @cacheControl(maxAge: 30) {
+    alias: String
+    id: String
+    name: String
+    abbreviation: String
+}
