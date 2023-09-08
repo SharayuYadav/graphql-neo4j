@@ -1,4 +1,4 @@
-type Personality @plural(value: "Personality")
+type Personality @plural(value: "Personality") @cacheControl(maxAge: 30)
 {
 description: String
 date_of_birth: String

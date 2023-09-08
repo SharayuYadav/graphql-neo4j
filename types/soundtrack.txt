@@ -1,4 +1,4 @@
-type Soundtrack @plural(value: "Soundtrack") {
+type Soundtrack @plural(value: "Soundtrack") @cacheControl(maxAge: 30) {
     id: String
     name: String
     duration_of_song: String

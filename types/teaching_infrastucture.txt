@@ -1,4 +1,4 @@
-type TeachingInfrastructure {
+type TeachingInfrastructure  @cacheControl(maxAge: 30){
 id: String
 post: String
 data: String

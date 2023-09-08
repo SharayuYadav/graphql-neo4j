@@ -1,4 +1,4 @@
-type Screening {
+type Screening @cacheControl(maxAge: 30) {
 id: String
 event_name: String
 type: String
