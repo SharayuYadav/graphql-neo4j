@@ -289,8 +289,8 @@ const neoSchema = new Neo4jGraphQL({ typeDefs, driver });
 
 const server = new ApolloServer({
     schema: await neoSchema.getSchema(),
-  // plugins: [responseCachePlugin()],
-  plugins: [ApolloServerPluginCacheControl({ defaultMaxAge: 120 })],
+ plugins: [responseCachePlugin()],
+ // plugins: [ApolloServerPluginCacheControl({ defaultMaxAge: 120 })],
 });
 const { url } = await startStandaloneServer(server, {
     context: async ({ req }) => ({ req }),
