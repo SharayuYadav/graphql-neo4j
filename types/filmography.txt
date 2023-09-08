@@ -1,0 +1,52 @@
+type Filmography @cacheControl(maxAge: 30){
+published: String
+full_movie_link: String
+short_description: String
+synopsis: String
+trailer_link: String
+date_of_expiry: String
+date_of_issue: String
+certificate_number: String
+duration_mins: String
+id: String
+number_of_reels: String
+year_of_film: String
+image: String
+budget_in_rupees: String
+alias: String
+alternative_title: String
+certification: String
+color_type: String
+colour: String
+country_of_origin_of_film: String
+film_length: String
+film_sub_type: String
+film_type: String
+gauge: String
+keyword_dates: String
+lab: String
+length_of_reels: String
+main_title: String
+name: String
+region: String
+release_date: String
+shooting_period: String
+studios: String
+sub_title: String
+title_in_original_language: String
+title_in_other_languages: String
+language: [Language!]! @relationship(type: "HAS_LANGUAGE", direction: IN)
+}
+
+type Language @cacheControl(maxAge: 30){
+id: String
+name: String
+alias: String
+country: String
+}
+
+type Genres @cacheControl(maxAge: 30){
+id: String
+name: String
+alias: String
+}

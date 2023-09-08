@@ -14,4 +14,41 @@ place_of_birth: String
 zodiac_sign: String
 time_of_birth: String
 is_publisher: String
+marriageregistrationdate: Date
+education: [Education!]! @relationship(type: "GOT_EDUCATED", direction: OUT)
+teaching_infrastructure: [TeachingInfrastructure!]! @relationship(type: "TAUGHT_INFRA", direction: IN)
+spouse: [Personality!]! @relationship(type: "IS_RELATED {relation: 'spouse'}", direction: OUT)
+children: [Personality!]! @relationship(type: "IS_RELATED {relation: 'children'}", direction: OUT)
+mother: [Personality!]! @relationship(type: "IS_RELATED {relation: 'mother'}", direction: OUT)
+father: [Personality!]! @relationship(type: "IS_RELATED {relation: 'father'}", direction: OUT)
+grandmother: [Personality!]! @relationship(type: "IS_RELATED {relation: 'grandmother'}", direction: OUT)
+grandfather: [Personality!]! @relationship(type: "IS_RELATED {relation: 'grandfather'}", direction: OUT)
+ancestors: [Personality!]! @relationship(type: "IS_RELATED {relation: 'ancestors'}", direction: OUT)
+awards: [Awards!]! @relationship(type: "AWARD_CATEGORY_WINNER", direction: IN)
+}
+
+type Education {
+id: String
+start_year: String
+end_year: String
+education: String
+image: String
+}
+
+type TeachingInfrastructure {
+id: String
+post: String
+data: String
+display_date: String
+image: String
+}
+
+type Awards {
+Exhibition: String
+award_name: String
+id: String
+issuing_authority: String
+sortable_date: String
+type: String
+winner: String
 }

@@ -1,0 +1,9 @@
+type Awards {
+Exhibition: String
+award_name: String
+id: String
+issuing_authority: String
+sortable_date: String
+type: String
+winner: String
+}

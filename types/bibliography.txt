@@ -1,5 +1,4 @@
-type Bibliography {
-Bibliography: String
+type Bibliograhies @cacheControl(maxAge: 30){
 id: String
 title: String
 alias: String
@@ -26,4 +25,5 @@ sortable_year_date_of_publication: String
 sub_title_of_document_book: String
 title_of_document_book: String
 volume_issue_number: String
+masterlist: String
 }

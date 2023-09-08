@@ -1,5 +1,6 @@
-type SoundTrack {
-id: String
-name: String
-duration_of_song: String
+type Soundtrack @plural(value: "Soundtrack") {
+    id: String
+    name: String
+    duration_of_song: String
+    film: String
 }

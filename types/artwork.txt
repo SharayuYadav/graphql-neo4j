@@ -1,4 +1,4 @@
-type ArtWork {
+type Artwork @cacheControl(maxAge: 30){
 id: String
 image: String
 height_cm: String
@@ -7,4 +7,31 @@ alias: String
 date_of_artwork: String
 medium: String
 title: String
+lots: [Lot!]! @relationship(type: "LOT_IS_TYPE_ARTWORK", direction: OUT)
+}
+
+type Lot @cacheControl(maxAge: 30){
+id: String
+published: String
+lot_number: String
+sp_gbp: String
+sp_inr: String
+sp_usd: String
+auction: [Auction!]! @relationship(type: "HAS_LOT", direction: IN)
+}
+
+type Auction @cacheControl(maxAge: 30){
+auction_code: String
+auction_house: String
+date_of_auction: String
+home_currency: String
+id: String
+year_of_auction: String
+euro_rate: String
+gbp_rate: String
+hkd_to_usd: String
+inr_to_usd_rate: String
+alias: String
+title: String
+venue: String
 }

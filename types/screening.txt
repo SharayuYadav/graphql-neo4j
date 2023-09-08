@@ -5,4 +5,5 @@ type: String
 sortable_date: String
 opening_date: String
 closing_date: String
+masterlist: String
 }

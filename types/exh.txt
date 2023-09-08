@@ -1,0 +1,11 @@
+type Exhibition {
+id: String
+alias: String
+category: String
+dates_revised: String
+description: String
+display_code: String
+place: String
+sortable_year: String
+title: String
+}

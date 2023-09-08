@@ -1,4 +1,4 @@
-type Currency {
+type Currency @cacheControl(maxAge: 30){
 id: String
 name: String
 alias: String

@@ -1,4 +1,4 @@
-type IntegratedTimeline {
+type IntegratedTimelines @cacheControl(maxAge: 30){
 id: String
 time_period: String
 title_of_time_period: String
@@ -12,4 +12,5 @@ text_2: String
 caption_2: String
 text_3: String
 caption_3: String
+masterlist: String
 }
