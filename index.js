@@ -287,6 +287,7 @@ const driver = neo4j.driver(
 );
 const neoSchema = new Neo4jGraphQL({ typeDefs, driver });
 
+// To DO: Add Redis Cache 
 const server = new ApolloServer({
     schema: await neoSchema.getSchema(),
  plugins: [responseCachePlugin()],
