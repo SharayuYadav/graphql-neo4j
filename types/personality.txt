@@ -16,7 +16,7 @@ time_of_birth: String
 is_publisher: String
 marriageregistrationdate: Date
 education: [Education!]! @relationship(type: "GOT_EDUCATED", direction: OUT)
-teaching_infrastructure: [TeachingInfrastructure!]! @relationship(type: "TAUGHT_INFRA", direction: IN)
+teaching_infrastructure: [Teaching_Infrastructure!]! @relationship(type: "TAUGHT_INFRA_BY", direction: IN)
 spouse: [Personality!]! @relationship(type: "IS_RELATED {relation: 'spouse'}", direction: OUT)
 children: [Personality!]! @relationship(type: "IS_RELATED {relation: 'children'}", direction: OUT)
 mother: [Personality!]! @relationship(type: "IS_RELATED {relation: 'mother'}", direction: OUT)
@@ -35,7 +35,7 @@ education: String
 image: String
 }
 
-type TeachingInfrastructure {
+type Teaching_Infrastructure {
 id: String
 post: String
 data: String
