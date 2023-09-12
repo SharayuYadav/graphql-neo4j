@@ -3,4 +3,5 @@ type Soundtrack @plural(value: "Soundtrack") @cacheControl(maxAge: 30) {
     name: String
     duration_of_song: String
     film: String
+    singer: String
 }
