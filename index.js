@@ -50,7 +50,7 @@ ${content}
     // To DO: Add Redis Cache 
     const server = new ApolloServer({
         schema: await neoSchema.getSchema(),
-     plugins: [responseCachePlugin(), ApolloServerPluginCacheControl({ defaultMaxAge: 120 })]
+     plugins: [responseCachePlugin(), ApolloServerPluginCacheControl({ defaultMaxAge: 300 })]
     });
     const { url } = await startStandaloneServer(server, {
         context: async ({ req }) => ({ req }),

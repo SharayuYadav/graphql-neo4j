@@ -24,7 +24,7 @@ father: [Personality!]! @relationship(type: "IS_RELATED {relation: 'father'}", d
 grandmother: [Personality!]! @relationship(type: "IS_RELATED {relation: 'grandmother'}", direction: OUT)
 grandfather: [Personality!]! @relationship(type: "IS_RELATED {relation: 'grandfather'}", direction: OUT)
 ancestors: [Personality!]! @relationship(type: "IS_RELATED {relation: 'ancestors'}", direction: OUT)
-awards: [Awards!]! @relationship(type: "AWARD_CATEGORY_WINNER", direction: IN)
+awards: [Awards!]! @relationship(type: "GOT_AWARD", direction: OUT)
 }
 
 type Education {
