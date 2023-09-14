@@ -27,4 +27,5 @@ title_of_document_book: String
 volume_issue_number: String
 masterlist: String
 image: String
+creator: String
 }
