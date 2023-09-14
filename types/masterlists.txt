@@ -1,4 +1,4 @@
-type Masterlists {
+type Masterlists @cacheControl(maxAge: 60){
     name: String
     id: String
     alias: String

@@ -1,4 +1,4 @@
-type Bibliograhies @cacheControl(maxAge: 30){
+type Bibliograhies @cacheControl(maxAge: 60){
 id: String
 title: String
 alias: String

@@ -1,4 +1,4 @@
-type Awards {
+type Awards @cacheControl(maxAge: 60){
 Exhibition: String
 award_name: String
 id: String

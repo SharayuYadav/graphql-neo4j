@@ -1,4 +1,4 @@
-type Personality @plural(value: "Personality") @cacheControl(maxAge: 30)
+type Personality @plural(value: "Personality") @cacheControl(maxAge: 60)
 {
 description: String
 date_of_birth: String
@@ -27,7 +27,7 @@ ancestors: [Personality!]! @relationship(type: "IS_RELATED {relation: 'ancestors
 awards: [Awards!]! @relationship(type: "GOT_AWARD", direction: OUT)
 }
 
-type Education {
+type Education @cacheControl(maxAge: 60){
 id: String
 start_year: String
 end_year: String
@@ -35,7 +35,7 @@ education: String
 image: String
 }
 
-type Teaching_Infrastructure {
+type Teaching_Infrastructure @cacheControl(maxAge: 60){
 id: String
 post: String
 data: String
@@ -43,7 +43,7 @@ display_date: String
 image: String
 }
 
-type Awards {
+type Awards @cacheControl(maxAge: 60){
 Exhibition: String
 award_name: String
 id: String

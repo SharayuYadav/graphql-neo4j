@@ -1,4 +1,4 @@
-type Exhibition {
+type Exhibition @cacheControl(maxAge: 60){
 id: String
 alias: String
 category: String

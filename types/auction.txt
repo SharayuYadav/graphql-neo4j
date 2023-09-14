@@ -1,4 +1,4 @@
-type Auction {
+type Auction @cacheControl(maxAge: 60) {
 auction_code: String
 AuctionHouse: String
 date_of_auction: String

@@ -1,4 +1,4 @@
-type Filmography @cacheControl(maxAge: 30){
+type Filmography @cacheControl(maxAge: 60){
 published: String
 full_movie_link: String
 short_description: String
@@ -38,14 +38,14 @@ title_in_other_languages: String
 language: [Language!]! @relationship(type: "HAS_LANGUAGE", direction: IN)
 }
 
-type Language @cacheControl(maxAge: 30){
+type Language @cacheControl(maxAge: 60){
 id: String
 name: String
 alias: String
 country: String
 }
 
-type Genres @cacheControl(maxAge: 30){
+type Genres @cacheControl(maxAge: 60){
 id: String
 name: String
 alias: String

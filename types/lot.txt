@@ -1,4 +1,4 @@
-type Lot {
+type Lot @cacheControl(maxAge: 60){
 id: String
 published: String
 lot_number: String

@@ -1,4 +1,4 @@
-type Projects @cacheControl(maxAge: 30) {
+type Projects @cacheControl(maxAge: 60) {
     published: String
     venue: String
     name: String

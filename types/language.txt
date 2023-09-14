@@ -1,4 +1,4 @@
-type Language {
+type Language @cacheControl(maxAge: 60){
 id: String
 name: String
 alias: String

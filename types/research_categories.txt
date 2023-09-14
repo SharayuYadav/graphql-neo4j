@@ -1,4 +1,4 @@
-type ResearchCategories @cacheControl(maxAge: 30) {
+type ResearchCategories @cacheControl(maxAge: 60) {
     alias: String
     id: String
     name: String
