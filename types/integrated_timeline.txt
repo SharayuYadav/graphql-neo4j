@@ -13,4 +13,9 @@ caption_2: String
 text_3: String
 caption_3: String
 masterlist: String
+unique_dates: [String]
+@cypher( statement: """MATCH (n:IntegratedTimelines)
+WITH n
+ORDER BY n.sortable_date
+RETURN COLLECT (DISTINCT n.sortable_date);""")
 }

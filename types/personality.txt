@@ -14,8 +14,8 @@ place_of_birth: String
 zodiac_sign: String
 time_of_birth: String
 is_publisher: String
-marriageregistrationdate: Date
-education: [Education!]! @relationship(type: "GOT_EDUCATED", direction: OUT)
+marriageregistrationdate: String
+education: [Education!]! @relationship(type: "GOT_EDUCATED", direction: IN)
 teaching_infrastructure: [Teaching_Infrastructure!]! @relationship(type: "TAUGHT_INFRA_BY", direction: IN)
 spouse: [Personality!]! @relationship(type: "IS_RELATED {relation: 'spouse'}", direction: OUT)
 children: [Personality!]! @relationship(type: "IS_RELATED {relation: 'children'}", direction: OUT)
@@ -24,7 +24,9 @@ father: [Personality!]! @relationship(type: "IS_RELATED {relation: 'father'}", d
 grandmother: [Personality!]! @relationship(type: "IS_RELATED {relation: 'grandmother'}", direction: OUT)
 grandfather: [Personality!]! @relationship(type: "IS_RELATED {relation: 'grandfather'}", direction: OUT)
 ancestors: [Personality!]! @relationship(type: "IS_RELATED {relation: 'ancestors'}", direction: OUT)
-awards: [Awards!]! @relationship(type: "GOT_AWARD", direction: OUT)
+awards: [Awards!]! @relationship(type: "GOT_AWARD", direction: IN)
+bibliographies: [Bibliographies!]! @relationship(type:"HAS_BIBLIOGRAPHY", direction: IN)
+integratedTimelines: [IntegratedTimelines!]! @relationship(type:"IS_RANGE_YEAR", direction: IN)
 }
 
 type Education @cacheControl(maxAge: 60){
@@ -51,4 +53,43 @@ issuing_authority: String
 sortable_date: String
 type: String
 winner: String
+}
+
+type Bibliographies {
+accession_number: String
+alias: String
+binding_status: String
+cdt: String
+country_of_publication: String
+dates_of_first_edition: String
+date_of_published_edition_in_library: String
+id: String
+isbn_issn_number: String
+language_of_publication: String
+number_of_pages_in_publication: String
+place_of_publication: String
+personality_film_visually_featured_on_cover: String
+serial_no: String
+sortable_year_date_of_publication: String
+sub_title_of_document_book: String
+title_of_document_book: String
+volume_issue_number: String
+web_serial_number: String
+web_display: String
+masterlist:String
+}
+
+type IntegratedTimelines {
+id: String
+time_period: String
+title_of_time_period: String
+sortable_date: String
+specific_date: String
+text_1: String
+caption_1: String
+text_2: String
+caption_2: String
+text_3: String
+caption_3: String
+masterlist:String
 }
